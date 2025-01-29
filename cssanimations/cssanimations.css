@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+}
+
+header{
+    margin: 0px;
+    padding: 5px;    
+    background-image: linear-gradient(to bottom, #000000, #040404, #080808, #0c0c0c, #0f0f10, #101112, #111214, #121416, #121518, #12151a, #13161b, #14161d);
+    text-decoration: none;
+}
+
+
+header nav {
+    text-align: center;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2fr, 2);
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    color: whitesmoke;
+    font-family: "Barlow Condensed", serif;
+    font-weight:600;
+    font-style: normal;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: none;
+    color: rgb(47, 47, 131);
+}
+
+h1 a:active {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.body{
+    background-image: linear-gradient(to bottom, #14161d, #131722, #131727, #12182c, #121831, #121831, #121831, #121831, #12182c, #131727, #131722, #14161d);
+    padding: 250px;
+    bottom: 15%;
+}
+
+.planet{
+    padding-right: 250px;
+}
+
+.planetss{
+    padding-right: 200px;
+}
+.planets {
+    padding-right: 150px;
+}
+
+.xwing{
+    position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 5s;
+  }
+  @keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 90%;
+    }
+    100% {
+      left: 0;    
+    }
+}
+
+.animate {
+    position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 5s; 
+    padding-left: 400px;
+  }
+  @keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0;    
+    }
+
+}
+
+input[type="checkbox"] {
+    content: url(18-188070_download-zip-archive-battlefront-tie-fighter-png.png);
+    appearance: none;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+input[type="checkbox"]:checked {
+    content: url('explosion-fire-transparent-background-png.webp');
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #14161d, #13161b, #12151a, #121518, #121416, #111214, #101112, #0f0f10, #0c0c0c, #080808, #040404, #000000);
+    padding: 130px;
+    
+}
+
+
