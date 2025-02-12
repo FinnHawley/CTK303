@@ -1,0 +1,32 @@
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+        <link href="java.css" rel="stylesheet" type="text/css">
+    </head>
+    <section>
+        <div>
+            <img class="luke" src="skywalker.gif">
+            <h1>Scroll to Join the Dark Side</h1>
+            <img id="peekaboo" src="vader.gif">
+        </div>
+    </section>
+    <script>
+        var logo = document.getElementById("peekaboo");
+        
+        function checkPosition() {
+           var logoTop = logo.offsetTop;
+           var windowScroll = window.scrollY;
+     
+           console.log("logoTop: ", logoTop);
+           console.log("windowScroll: ", windowScroll);
+           
+           if (logoTop - windowScroll < 400) {
+               logo.classList.add("show");
+           } else {
+              logo.classList.remove("show");
+           }
+        }
+        window.addEventListener("scroll",checkPosition);
+     </script>
+</html>

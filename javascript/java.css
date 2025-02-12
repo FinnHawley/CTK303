@@ -1,0 +1,23 @@
+#peekaboo {
+    width: 50vw; /* 50% of viewport (window) width */
+    opacity: 0;
+    transform: translate(0,-500px);
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ #peekaboo.show {
+    opacity: 1;
+    transform: translate(0,0);
+ }
+
+
+.luke{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
